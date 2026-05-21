@@ -1,9 +1,9 @@
-# Virtual Oncologist
+# Clinical Evidence Extraction via Small Language Models: Oncology as a Case Study
 
 
 ## Pre-requisites
 
-- PubMed API key for PubMed search
+- PubMed API key for PubMed search in .env file (PUBMED_API_KEY)
 - Oncobox reports
 
 
