@@ -1,0 +1,472 @@
+INFO:root:unsloth/Qwen3-14B
+INFO:root:GETTING INFO FROM FILE
+C:\Users\105\GitHub\VirtualOncologist\extract.py:64: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.loc[df.score.isin(['- ','-',' -']),'score'] = '10.00'
+C:\Users\105\GitHub\VirtualOncologist\extract.py:67: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.score = df.score.astype(float)
+C:\Users\105\GitHub\VirtualOncologist\extract.py:69: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.treat = df.treat.apply(lambda x: x.strip())
+
+http://localhost:8080/v1
+http://localhost:8080/v1
+
+INFO:root:Colorectal cancer, ['Crizotinib' 'Lorlatinib' 'Necitumumab' 'Nimotuzumab' 'Panitumumab'
+ 'Cetuximab' 'Brigatinib' 'Ramucirumab' 'Pomalidomide' 'Toremifene'
+ 'Denosumab' 'Duvelisib' 'Inavolisib' 'Bevacizumab' 'Anastrozole'
+ 'Letrozole' 'Tamoxifen' 'Fulvestrant' 'Exemestane' 'Buserelin']
+INFO:root:12.103415489196777
+INFO:root:creating new db
+INFO:root:vector store NAME: hybrid_one_db_Crizotinib
+INFO:root:39
+INFO:root:9.846203088760376
+INFO:root:GETTING FULL TEXT PAPERS
+C:\Users\105\GitHub\VirtualOncologist\report_gen.py:294: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chosen_df['FullText'] = ''
+C:\Users\105\GitHub\VirtualOncologist\report_gen.py:295: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chosen_df['FullText'] = papers0
+INFO:root:35.612321853637695
+INFO:root:EMBEDDING...
+INFO:root:papers embedded and new: 39/39
+INFO:root:FIN EMBEDDING
+INFO:root:4296.9881939888
+INFO:root:EXTR RESULTS FROM PAPERS
+INFO:root:field  The outcome of treating Colorectal cancer with Crizotinib
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib delayed the progression of liver metastases and peritoneal carcinomatosis in colorectal cancer models.', source_id=[1, 7, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib restored cetuximab sensitivity in SC.', source_id=[0, 1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib achieved a partial response (PR) with progression-free survival (PFS) of 3 months in an ALK-fusion mCRC patient.', source_id=[0, 2, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Partial response in one colorectal cancer patient.', source_id=[0, 1, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib showed limited activity in unselected heavily pre-treated patients with advanced solid tumours.', source_id=[6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib combined with MMC showed synergistic anti-cancer effects in CRC cell lines and xenograft models.', source_id=[1, 3, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib, when combined with EpAb2-6, significantly inhibits tumor progression and prolongs survival in colon cancer animal models.', source_id=[2, 3, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='(S)-crizotinib effectively suppressed tumour growth in animal models and showed strong antiproliferative effects on human cancer cell lines.', source_id=[0, 1, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib was more sensitive to low-risk group.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='(S)-crizotinib showed a higher capacity in reducing cell viability compared to TH588 in CRC organoids and spheroids.', source_id=[2, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib, when combined with vemurafenib, showed rapid and marked effectiveness in treating BRAF-mutated colorectal cancer.', source_id=[3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib exhibits a well-targeted inhibitory effect on c-Met positive tumor cells and is part of a synergistic chemophototherapy strategy for colorectal cancer.', source_id=[1, 2, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib has been proved to impact LoVo spheroids morphology.', source_id=[4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib blocked the HGF/STAT3/SOX13/c-MET axis, significantly inhibiting SOX13-mediated CRC migration, invasion, and metastasis.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib effectively sensitizes cetuximab-resistant KRAS mutant colorectal cancer cell lines to radiation.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib is mentioned as a drug in the context of P:R fusion-positive CRC, but no specific effectiveness outcome is described.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib was one of the targeted drugs used in the treatment of CRC patients, but the specific effectiveness of crizotinib is not mentioned in the report.', source_id=[3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Combination binimetinib/crizotinib showed poor tolerability with no objective responses observed in RASMT advanced CRC patients.', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib restored cetuximab sensitivity in CRC cell lines and is considered a promising therapeutic agent for CRCs with high IRG risk scores.', source_id=[0, 1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib exhibits moderate cytotoxicity against human epithelial colorectal adenocarcinoma Caco-2 cell line.', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib selectively inhibited the growth of ARID1A-deficient CRC cells in vitro and in xenograft tumor models.', source_id=[1, 2, 3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib-treated patients achieve high response rates, with an excellent toxicity profile.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib, when combined with cetuximab or panitumumab, significantly reduces colony number and inhibits tumor growth in colorectal cancer (CRC) 3D cultures and xenografts.', source_id=[0, 6, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='The inhibition of c-Met by crizotinib reduced ERK activation and Oct4 expression and suppressed CSC properties.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib combined with regorafenib and tislelizumab obtained an obvious response in a CRC patient with TPM4-ALK fusion and c-MET amplification.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Her abdominal pain resolved, and her CEA decreased from 9.5 to 4.8.', source_id=[1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Molecularly targeted treatment with crizotinib induced a rapid and sustained partial response, but disseminated tumor progression occurred after 15 months.', source_id=[0, 1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='The expression level of SDHB was correlated with drug sensitivity to Crizotinib.', source_id=[0, 1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Proliferation is blocked by crizotinib in colorectal cancer cells.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib induces PUMA-dependent apoptosis in colon cancer cells and synergizes with other inhibitors to enhance apoptosis.', source_id=[0, 6, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib combined with cetuximab inhibited CC-HGF colony growth in 3D cultures.', source_id=[3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib is highly effective against ROS1-rearranged lung cancer but its effectiveness in colorectal cancer is not explicitly mentioned.', source_id=[1, 4, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Crizotinib effectiveness', value='Crizotinib reduced metastasis in all models tested when used as a single agent or in combination with sunitinib.', source_id=[1])])]
+INFO:root:bad output fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])]; removing paper 35343863
+INFO:root:bad output fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])]; removing paper 26438251
+INFO:root:bad output fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])]; removing paper 23719267
+INFO:root:bad output fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])]; removing paper 24789362
+INFO:root:bad output fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])]; removing paper 37686423
+INFO:root:bad output fieldresult=[FieldResult(name='Crizotinib effectiveness', value='NP', source_id=[])]; removing paper 27565250
+INFO:root:field  Is the study in vitro, in vivo, clinical trial or others
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vivo', source_id=[0, 1, 3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='In vitro and clinical trial', source_id=[0, 6, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='In vitro', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in-vivo CRC xenograft model', source_id=[0, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vivo', source_id=[1, 2, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vivo', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='In vitro and in vivo studies using CRC spheroids, organoids, and zebrafish embryos', source_id=[2, 3, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vivo', source_id=[0, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro', source_id=[0, 5, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vivo', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro and in vivo', source_id=[0, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[0, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro, in vivo, and clinical trial', source_id=[1, 3, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro and in vivo', source_id=[1, 2, 3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro and in vivo', source_id=[1, 7, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='In vitro and in vivo study on colorectal cancer cells', source_id=[3, 4, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[1, 3, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[1, 4, 5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro', source_id=[0, 1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro and in vivo', source_id=[0, 1, 3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro and in vivo', source_id=[1, 2, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='In vitro and in vivo studies', source_id=[0, 2, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vivo', source_id=[1])])]
+INFO:root:field  How many patients with Colorectal cancer are treated with Crizotinib in the study
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='1', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='One colorectal cancer patient was treated with crizotinib.', source_id=[0, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='36 patients with advanced RASMT CRC were included in the study.', source_id=[8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='2 patients with CRC were treated with crizotinib', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='40,589 patients with colorectal cancer were analyzed for ROS1 rearrangements, but specific numbers treated with crizotinib are not provided.', source_id=[0, 1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:7913.470731496811
+INFO:root:0.0
+
+to save paper res False 33
+
+INFO:root:creating new db
+INFO:root:vector store NAME: hybrid_one_db_Lorlatinib
+INFO:root:4
+INFO:root:9.873390197753906
+INFO:root:GETTING FULL TEXT PAPERS
+C:\Users\105\GitHub\VirtualOncologist\report_gen.py:294: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chosen_df['FullText'] = ''
+C:\Users\105\GitHub\VirtualOncologist\report_gen.py:295: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chosen_df['FullText'] = papers0
+INFO:root:2.8680999279022217
+INFO:root:EMBEDDING...
+INFO:root:papers embedded and new: 4/4
+INFO:root:FIN EMBEDDING
+INFO:root:379.33893609046936
+INFO:root:EXTR RESULTS FROM PAPERS
+INFO:root:field  The outcome of treating Colorectal cancer with Lorlatinib
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Lorlatinib effectiveness', value='The patient achieved a progression-free survival (PFS) of 11.5 months with lorlatinib treatment.', source_id=[0, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Lorlatinib effectiveness', value='Responded well to lorlatinib treatment in a case of ALK-positive colorectal cancer.', source_id=[0, 1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Lorlatinib effectiveness', value='Lorlatinib was effective in managing CRC patients with ALK L1196M resistance mutation, though effectiveness was not as pronounced as in NSCLC.', source_id=[1, 4, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Lorlatinib effectiveness', value='Lorlatinib treatment significantly suppresses polyp formation in experimental colorectal cancer by inhibiting ALKAL2/ALK signaling.', source_id=[6, 8, 5])])]
+INFO:root:field  Is the study in vitro, in vivo, clinical trial or others
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='Clinical trial', source_id=[6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[0, 1, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vivo', source_id=[0])])]
+INFO:root:field  How many patients with Colorectal cancer are treated with Lorlatinib in the study
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='1', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:1034.2888760566711
+INFO:root:0.0
+
+to save paper res False 4
+
+INFO:root:creating new db
+INFO:root:vector store NAME: hybrid_one_db_Necitumumab
+INFO:root:2
+INFO:root:9.114400863647461
+INFO:root:GETTING FULL TEXT PAPERS
+C:\Users\105\GitHub\VirtualOncologist\report_gen.py:294: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chosen_df['FullText'] = ''
+C:\Users\105\GitHub\VirtualOncologist\report_gen.py:295: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chosen_df['FullText'] = papers0
+INFO:root:1.5937237739562988
+INFO:root:EMBEDDING...
+INFO:root:papers embedded and new: 2/2
+INFO:root:FIN EMBEDDING
+INFO:root:333.6579284667969
+INFO:root:EXTR RESULTS FROM PAPERS
+INFO:root:field  The outcome of treating Colorectal cancer with Necitumumab
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Necitumumab effectiveness', value='It remains to be seen whether these trials will advance, and whether or not resistance through epitope mutation will emerge.', source_id=[5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Necitumumab effectiveness', value='The combination of necitumumab with mFOLFOX6 was associated with evidence of efficacy and a manageable safety profile in patients with previously untreated locally advanced or metastatic CRC.', source_id=[0])])]
+INFO:root:field  Is the study in vitro, in vivo, clinical trial or others
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[2, 3, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='In vitro studies', source_id=[0, 2])])]
+INFO:root:field  How many patients with Colorectal cancer are treated with Necitumumab in the study
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='25 evaluable patients', source_id=[0])])]
+INFO:root:564.1456904411316
+INFO:root:0.0
+
+to save paper res False 2
+
+INFO:root:creating new db
+INFO:root:vector store NAME: hybrid_one_db_Nimotuzumab
+INFO:root:10
+INFO:root:9.067229509353638
+INFO:root:GETTING FULL TEXT PAPERS
+C:\Users\105\GitHub\VirtualOncologist\report_gen.py:294: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chosen_df['FullText'] = ''
+C:\Users\105\GitHub\VirtualOncologist\report_gen.py:295: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chosen_df['FullText'] = papers0
+INFO:root:10.751621007919312
+INFO:root:EMBEDDING...
+INFO:root:papers embedded and new: 10/10
+INFO:root:FIN EMBEDDING
+INFO:root:704.3270788192749
+INFO:root:EXTR RESULTS FROM PAPERS
+INFO:root:field  The outcome of treating Colorectal cancer with Nimotuzumab
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Nimotuzumab effectiveness', value='Nimotuzumab combined with chemotherapy significantly improves the disease control rate and survival benefit in patients with solid tumors.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Nimotuzumab effectiveness', value='Nimotuzumab showed less effectiveness compared to [225Ac]Ac-macropa-nimotuzumab in KRAS mutant and BRAFV600E mutant CRC models.', source_id=[2, 4, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Nimotuzumab effectiveness', value='Nimotuzumab had a minimal effect on tumor growth but no complete cure, while nimotuzumab-PEG6-DM1 showed more tumor necrosis and complete tumor regression in some cases.', source_id=[0, 3, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Nimotuzumab effectiveness', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Nimotuzumab effectiveness', value='Nimotuzumab is one of the anti-EGFR antibodies under clinical development for the treatment of metastatic colorectal cancer.', source_id=[1, 3, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Nimotuzumab effectiveness', value='The efficacy of this regimen (pCR = 19.0%) was significantly higher.', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Nimotuzumab effectiveness', value='Nimotuzumab is one of the drugs studied in colorectal cancer showing promising results.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Nimotuzumab effectiveness', value='The efficacy of nimotuzumab combined with CT in the treatment of advanced colorectal cancer was slightly better than that of cetuximab, and with mild adverse reactions.', source_id=[0, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Nimotuzumab effectiveness', value='Nimotuzumab-PEG6-DM1-High resulted in 2/5 complete cure in colorectal cancer model.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Nimotuzumab effectiveness', value='Nimotuzumab-PEG6-DM1 treatment showed complete remission in 1/5 mice and prevented metastatic spread in 4/5 mice.', source_id=[0, 2])])]
+INFO:root:bad output fieldresult=[FieldResult(name='Nimotuzumab effectiveness', value='NP', source_id=[])]; removing paper 22918766
+INFO:root:field  Is the study in vitro, in vivo, clinical trial or others
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='retrospective clinical trial', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='The study includes both in vitro and in vivo experiments.', source_id=[0, 1, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro', source_id=[0, 2, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='Prospective phase II trial', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='clinical trial', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='retrospective study', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro and in vivo', source_id=[1, 3, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Type of study', value='in vitro and in vivo', source_id=[0, 1, 6])])]
+INFO:root:field  How many patients with Colorectal cancer are treated with Nimotuzumab in the study
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='21 patients with locally advanced rectal cancer were treated with Nimotuzumab', source_id=[8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='205 advanced cancer patients, including colorectal cancer', source_id=[0, 3, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Num participants', value='NP', source_id=[])])]
+INFO:root:2170.2313215732574
+INFO:root:0.0022509098052978516
+
+to save paper res False 9
+
+INFO:root:creating new db
+INFO:root:vector store NAME: hybrid_one_db_Panitumumab
+INFO:root:creating new db
+INFO:root:vector store NAME: hybrid_one_db_Cetuximab
+INFO:root:132
+INFO:root:13.895487308502197
+INFO:root:GETTING FULL TEXT PAPERS
+C:\Users\105\GitHub\VirtualOncologist\report_gen.py:294: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chosen_df['FullText'] = ''
+C:\Users\105\GitHub\VirtualOncologist\report_gen.py:295: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chosen_df['FullText'] = papers0
+INFO:root:129.15135645866394
+INFO:root:EMBEDDING...
+INFO:root:papers embedded and new: 132/132
+INFO:root:FIN EMBEDDING
+INFO:root:10742.724910497665
+INFO:root:EXTR RESULTS FROM PAPERS
+INFO:root:field  The outcome of treating Colorectal cancer with Cetuximab
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Triple therapy with cetuximab offers meaningful improvements in survival and tumor response in BRAF V600E-mutated CRC.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='The combination of encorafenib and cetuximab provides clinical benefit in BRAFV600E mutant mCRC, but only 22% of patients respond and most eventually develop resistance.', source_id=[1, 4, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab, when combined with encorafenib and nivolumab, showed an overall response rate of 50% in patients with microsatellite stable BRAFV600E metastatic colorectal cancer.', source_id=[2, 3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Anti-EGFR rechallenge showed improved disease control rate (DCR) and objective response rate (ORR) but no overall survival benefit compared to standard of care.', source_id=[5, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab rechallenge combined with avelumab shows potential as a treatment for RAS wild-type metastatic colorectal cancer, with delta-radiomics indicating response and survival outcomes.', source_id=[4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab demonstrated higher ORR and a trend toward improved PFS and OS when combined with garsorasib in KRAS G12C-mutated mCRC patients.', source_id=[0, 1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab has shown promising clinical activity in refractory mCRC patients as an anti-EGFR rechallenge strategy.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab combined with mFOLFOX6 showed an objective response rate (ORR) of 77.5% in RAS wild-type metastatic colorectal cancer.', source_id=[2, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='The combination of encorafenib and cetuximab offers significant clinical benefits, improving PFS and OS, while providing manageable safety and important QoL advantages.', source_id=[3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab improves survival in KRAS wild-type colorectal cancer patients by combining EGFR inhibition with immune activation.', source_id=[0, 6, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab plus FOLFIRI may confer a survival advantage over bevacizumab in KRAS wild-type mCRC without PTR, including during later-line therapy.', source_id=[3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab was used in patients with KRAS, NRAS, and BRAF wild-type tumors and achieved a disease control rate of 78.2%.', source_id=[1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is used in combination with pembrolizumab or nivolumab for treating colorectal cancer and head and neck squamous cell carcinoma.', source_id=[0, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab benefits patients with RAS wild-type metastatic colorectal cancer irrespective of tumor sidedness.', source_id=[0, 1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab was used in combination with encorafenib and WNT974, but no specific effectiveness outcome for colorectal cancer was reported.', source_id=[0, 1, 5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab in combination with encorafenib improved overall survival, objective response rate, and progression-free survival in previously treated BRAFV600E-mutant metastatic colorectal cancer.', source_id=[0, 2, 5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value="Cetuximab's effectiveness in treating metastatic colorectal cancer (mCRC) is influenced by factors such as TIGIT expression on NK cells, which can predict treatment outcomes.", source_id=[0, 3, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab triggered DNA damage and hampered CRC cell proliferation in vitro and reduced tumor growth in mouse models.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='The combination of cetuximab and pembrolizumab failed to improve outcomes for patients with advanced RAS wild-type CRC, but TP53 mutation was associated with improved disease control.', source_id=[0, 1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Combination with A12 (10 mg/kg) and cetuximab (3 mg/kg) further enhanced efficacy (TGI: 81%) with a favorable safety profile.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab sensitivity can be enhanced by targeting MIR100HG-L, improving therapeutic efficacy in CRC.', source_id=[0, 4, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab monotherapy achieved an overall response rate of 10% and disease control rate of 34% in heavily pretreated mCRC patients.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab combined with encorafenib and chemotherapy showed significant improvements in overall survival, progression-free survival, and objective response rate in patients with BRAF-mutated colorecta', source_id=[5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab demonstrates clinical outcomes and safety data similar to results in RAS WT mCRC patients when combined with first-line chemotherapy.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab-resistant colorectal cancer was studied in the context of PA-MSHA treatment.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Encorafenib, cetuximab, and binimetinib are targeted therapies developed for metastatic colorectal cancer with a BRAF V600E mutation.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='mSEPT9-positive patients showed comparable PFS with bevacizumab but no significant ORR differences were observed for cetuximab.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab provides beneficial yet limited clinical improvement in KRAS wild-type metastatic colorectal cancer (mCRC).', source_id=[4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab showed durable treatment benefit when used as first-line therapy for left-sided, RAS wild-type metastatic colorectal cancer, especially after switching due to skin toxicity.', source_id=[5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab has been reported to show radiological or pathological responses in treating colorectal liver metastases (CRLM), though typically in combination with other drugs.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab improves survival in KRAS wildtype metastatic colorectal cancer, but its use is limited by hypersensitivity reactions (HSRs) up to 10-20%.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is one of the anticancer agents used in CRC, and studies investigate its resistance mechanisms involving ncRNAs.', source_id=[0, 1, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab combined with chemotherapy showed varying effectiveness based on immune markers such as NOS2, ARG1, SII, and SIRI.', source_id=[3, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab has limited efficacy in treating metastatic colorectal cancer, with only 30% of patients experiencing clinical benefit due to drug resistance.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Patients treated with cetuximab/panitumumab had a median OS of 24 months, which was significantly lower than the 30 months observed in the bevacizumab group (P = 0.015).', source_id=[0, 1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab, in combination with encorafenib and mFOLFOX6, showed improved progression-free survival and overall survival in patients with BRAF V600E-mutant metastatic colorectal cancer.', source_id=[5, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab sensitivity was higher in PREX2-mutated colorectal cancer.', source_id=[0, 1, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is part of the clinical success in treating metastatic colorectal cancer, especially when guided by molecular tumor profiling.', source_id=[0, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is used in combination with encorafenib as a standard of care for BRAFV600E-mutant metastatic colorectal cancer after failure of previous systemic therapy.', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Pathological complete response (pCR) was achieved after treatment with mFOLFOX6 plus cetuximab in a case of synchronous peritoneal metastasis from colorectal cancer.', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab, when combined with alpelisib and encorafenib, diminishes tumors in colorectal cancer.', source_id=[0, 1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab improves outcomes in patients with metastatic colorectal cancer (mCRC), extending overall survival (OS) to 24–30 months and beyond.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab shows significant survival benefits in treating metastatic CRC but is only effective in 60–70% of cases with wild-type RAS/KRAS.', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab showed variable effectiveness depending on patient sex and tumor sidedness, with significant benefits in some subgroups and detrimental effects in others.', source_id=[0, 1, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab induces immunogenic cell death in CRC and leads to an increase in tumor-infiltrating CD8+ T cells and NK cells.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='The outcome of treating Colorectal cancer with Cetuximab is described in a case report.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab demonstrated equivalent efficacy to Cetuximab-β in terms of PFS and OS for mCRC patients.', source_id=[4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab treatment in KRAS wild-type metastatic colorectal cancer showed improved progression-free survival and overall survival compared to best supportive care, but with an objective response rate ', source_id=[0, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab+FOLFIRI followed by oxaliplatin-based therapy enhances overall survival (OS) in KRAS wild-type unresectable mCRC compared to bevacizumab+FOLFIRI.', source_id=[0, 3, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value="Cetuximab's efficacy may be enhanced by alisertib, potentially expanding treatment benefits to more cetuximab-resistant CRC patients.", source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Improved outcomes in treating colorectal cancer with FOLFOX+EC.', source_id=[1, 2, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab combined with encorafenib and binimetinib showed improved survival and response outcomes in BRAF-mutated metastatic colorectal cancer.', source_id=[4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab treatment for colorectal cancer leads to higher response rates, longer time to disease progression, and extended median survival when combined with chemotherapy.', source_id=[6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab combined with encorafenib offers modest improvements in survival and disease control in patients with BRAF V600E-mutated metastatic colorectal cancer.', source_id=[0, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='The therapeutic benefit of cetuximab in combination with BRAF inhibitors remains limited and short-lived in BRAFV600E-mutated metastatic colorectal cancer.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab-functionalized liposomal systems show potential for colorectal cancer therapy by combining selective targeting, photodynamic action, and chemotherapy.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab increases LGR5 expression and augments LGR5-targeting antibody-drug conjugate efficacy in CRC models, leading to enhanced antitumor efficacy and survival.', source_id=[1, 2, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='The outcome of treating Colorectal cancer with Cetuximab was not directly mentioned, but the study evaluated the relationship between side effects of anti-EGFR agents (like Cetuximab) and survival.', source_id=[6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab with chemotherapy enhances progression-free survival (PFS) and overall survival (OS) among CRC patients, but its efficacy is limited by resistance over time.', source_id=[0, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab rechallenge in molecularly selected metastatic colorectal cancer showed no significant increase in efficacy when combined with avelumab.', source_id=[1, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is used in combination with anti-angiogenic agents for RAS wild-type advanced CRC patients, but specific efficacy outcomes are not detailed in the report.', source_id=[0, 5, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab, encorafenib, and binimetinib led to significant improvement and prolonged survival for 34 months in a patient with colorectal choriocarcinoma.', source_id=[1, 2, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='The promising efficacy and safety of cetuximab in combination with glecirasib support further exploration for patients with advanced, refractory colorectal cancer harbouring KRASG12C mutations.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='The case highlights the importance of early recognition and management for severe cetuximab-induced skin toxicity to ensure treatment continuity.', source_id=[4, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab has revolutionized colorectal cancer therapy.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='EC use versus chemotherapy was associated with a trend for improved OS (HR 0.70, median 8.6 versus 6.8 months).', source_id=[3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab resistance is observed in KRAS-mutant CRC, with ALKBH5 contributing to this resistance.', source_id=[0, 3, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is used in the treatment of colorectal cancer and has shown effectiveness in managing metastatic colorectal cancer.', source_id=[0, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab itself is not cost-effective in mCRC, and its incremental survival gains are insufficient to compensate for the cost burden.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab showed significantly increased overall survival (OS) in patients with RAS wild-type cancers when combined with FOLFIRI, but no improvement in OS or PFS for RAS mutant cancers.', source_id=[0, 2, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab-IRDye800CW enables stable, tumor-specific, and high-contrast fluorescence imaging in colorectal cancer models, with performance closely linked to EGFR expression.', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab, when combined with encorafenib and chemotherapy, improves patient outcomes in BRAF V600E-mutant CRC.', source_id=[0, 2, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab-based induction and maintenance treatment showed prognostic impact on clinical outcomes in mCRC patients.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab, when used in combination with encorafenib and binimetinib, showed effectiveness in treating metastatic colorectal cancer, though it was associated with cardiac dysfunction.', source_id=[5, 8, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab plus FOLFIRI has significantly higher ORR and longer OS in the treatment of patients with mCRC.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is efficient for treating metastatic CRC but its effectiveness is limited by the emergence of drug resistance.', source_id=[2, 3, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Butyrate reduces cetuximab efficacy in KRAS wild-type colorectal cancer through EGFR and AMPK-Wip1 signaling.', source_id=[1, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab, as part of the BEACON regimen, showed marked improvements in overall survival and progression-free survival in patients with BRAF-mutant colorectal cancer.', source_id=[7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab rechallenge therapy showed significantly longer progression-free survival (PFS) and overall survival (OS) in patients with RAS/BRAF WT ctDNA.', source_id=[0, 3, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab treatment was associated with overall survival in colorectal cancer patients, though overexpression of WDR62 may contribute to resistance.', source_id=[2, 4, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab treatment in mCRC patients with wild-type KRAS led to increased KRAS mutation rates, indicating potential resistance development.', source_id=[3, 6, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab combined with other drugs like encorafenib and binimetinib improved survival in BRAF V600E mutant metastatic colorectal cancer patients.', source_id=[0, 1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab enhances the efficacy of LGR5-targeting antibody-drug conjugates in RAS wild-type and RAS mutant colorectal cancer models.', source_id=[1, 4, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Adding cetuximab to mFOLFOX7 resulted in numerically higher ORR than mFOLFOX alone, but no statistically significant differences in ORR, PFS or OS.', source_id=[0, 2, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is effective in treating metastatic colorectal cancer (mCRC), with high miR-196b levels correlating with better treatment outcomes.', source_id=[9, 4, 3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab significantly improves outcomes in patients with RAS wild-type tumors, yet only about one third derive durable benefit.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab showed superior PFS and OS in patients with high MBR.', source_id=[1, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab monotherapy showed moderately low antitumor activity, but combination with THM significantly improved therapeutic effect against colorectal cancer.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab, when combined with chemotherapy, exerts synergistic effects, controlling disease progression and enhancing immune response.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Hypokalemia was correlated with a higher disease control rate (96.8% vs 87.1%, p=0.028).', source_id=[6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab resistance is a significant hurdle in treating colorectal cancer, with mechanisms involving succinate-induced M2 macrophage polarization.', source_id=[1, 7, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='complete regression of metastases following first-line treatment with toripalimab, cetuximab, and FOLFIRI, enabling curative-intent surgical resection', source_id=[0, 1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is used to treat RAS wild-type metastatic colorectal cancer and has shown effectiveness in combination with other therapies.', source_id=[0, 2, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab, when combined with encorafenib and binimetinib, showed superior survival outcomes in patients with BRAF mutant metastatic colorectal cancer.', source_id=[0, 3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Patients in resection group showed better tumor response, including overall response, objective response, largest tumor diameter and levels of tumor biomarkers after treatment.', source_id=[5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='FOLFOX plus bevacizumab yielded better OS than cetuximab in KRAS-mutant patients.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab (Cmab) was used after discontinuation of panitumumab due to skin toxicity, and FOLFIRI was continued for 71 courses.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is an effective therapeutic agent as first-line therapy for older patients with RAS wild-type mCRC.', source_id=[0, 2, 5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab-treated group showed a significantly higher incidence of fibrosis ≥40% (45.71%) compared to bevacizumab group (24.4%).', source_id=[0, 1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Combinatorial regimens integrating KRASG12C inhibitors with cetuximab have doubled objective response rates in colorectal cancer.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab was used in combination with other therapies, and dysphagia significantly improved one week after radiotherapy initiation, with a partial response observed at three-month follow-up.', source_id=[1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab, when combined with FOLFIRI, showed varying effectiveness based on molecular profiles, with higher ORR and mPFS in concordant cases.', source_id=[5, 7, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab showed lower efficacy compared to panitumumab in treating left-sided RAS or KRAS wild-type mCRC.', source_id=[5, 6, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab inhibits CRC cell proliferation and exerts antitumor activity through immune mechanisms.', source_id=[1, 2, 5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Successful re-challenge with Cetuximab in BRAF V600E mutated metastatic colorectal cancer.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='RAS-mutant organoids were consistently resistant to cetuximab, whereas RAS wild-type organoids showed variable responses.', source_id=[0, 1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Combination therapies with cetuximab showed higher response rates (up to 43%) and disease control rates (up to 96%) compared to monotherapy.', source_id=[0, 1, 3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is used in combination with 5-fluorouracil for first-line treatment of metastatic colorectal cancer.', source_id=[0, 1, 3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab has demonstrated efficacy in improving clinical outcomes for advanced colorectal cancer.', source_id=[0, 1, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is used in mCRC with limited data on efficacy in dMMR/MSI-H CRC.', source_id=[1, 5, 9])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='CS4 showed enhanced sensitivity to cetuximab.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Six cycles of chemotherapy FOLFOX\u2009+\u2009Cetuximab were administered before surgery, but five liver metastases recurred 6 months later.', source_id=[1])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab demonstrated highly promising efficacy with ORR of 38-44% and 50%, respectively, when combined with olomorasib.', source_id=[0, 3, 5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab resistance is driven by the positive feedback loop between ErbB3 and Akt pathway, which can be suppressed by exosomal circSETD3.', source_id=[1, 2, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is an approved treatment for KRAS wild-type metastatic CRC, but acquired resistance develops in 65–70% of patients within 3–12 months.', source_id=[2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab showed limited efficacy with an ORR of 2.6% in previously treated colorectal cancer.', source_id=[0, 8])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab is part of the ENCOCET combination for BRAFm mCRC, but 2-5% of patients experience grade 3-4 infusion-related reactions leading to discontinuation.', source_id=[0, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='FOLFIRI plus cetuximab resulted in marked regression of the nodes but without CEA normalization.', source_id=[1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='The outcome of treating Colorectal cancer with Cetuximab was evaluated in the FIRE-3 trial, comparing FOLFIRI plus cetuximab to FOLFIRI plus bevacizumab.', source_id=[1, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab shows mixed outcomes; it is associated with improved RFS in hyperselected patients but has a detrimental effect on OS in some subgroups.', source_id=[1, 9, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab was more effective than bevacizumab at improving survival outcomes in left-sided mCRC.', source_id=[2, 5, 7])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab effectiveness is influenced by genomic alterations, such as RASAL2 mutations, which can reduce sensitivity and require higher drug concentrations.', source_id=[2, 3, 6])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Adagrasib plus cetuximab was not cost-effective compared to adagrasib monotherapy for CRC patients with mutated KRASG12C.', source_id=[3])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab could open up novel therapeutic avenues for treating colorectal cancer, thereby improving CRC patient outcomes and overall survival.', source_id=[0])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab shows reduced efficacy in BRAF V600E mutated metastatic colorectal cancer.', source_id=[0, 2])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab has proven effective in overcoming intrinsic resistance in CRC and, when combined with adagrasib, improved ORR to 46% in mCRC with early ctDNA clearance and low-grade toxicity.', source_id=[2, 3, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='The survival benefit of anti-EGFR therapy in RAS wild-type CRLM appears to be limited to patients with unresectable disease. In resectable settings, its use may be futile or even detrimental.', source_id=[0, 2, 5])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab treatment showed reduced apoptosis and enhanced cell proliferation in CRC cell lines, with UBR4 expression correlating with better therapeutic response and longer progression-free survival.', source_id=[1, 5, 4])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='NP', source_id=[])])]
+INFO:root:parsed_results in asynch: [Results(fieldresult=[FieldResult(name='Cetuximab effectiveness', value='Cetuximab showed OS of 0.47 (0.29, 0.73) and PFS of 0.32 (0.20, 0.53).', source_id=[0, 1])])]
+INFO:root:bad output fieldresult=[FieldResult(name='Cetuximab effectiveness', value='NP', source_id=[])]; removing paper 41380767
+INFO:root:bad output fieldresult=[FieldResult(name='Cetuximab effectiveness', value='NP', source_id=[])]; removing paper 41533158
+INFO:root:bad output fieldresult=[FieldResult(name='Cetuximab effectiveness', value='NP', source_id=[])]; removing paper 40962191
+INFO:root:field  Is the study in vitro, in vivo, clinical trial or others
