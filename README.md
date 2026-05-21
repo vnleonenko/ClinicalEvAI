@@ -4,7 +4,6 @@
 ## Pre-requisites
 
 - PubMed API key for PubMed search
-
 - Oncobox reports
 
 
@@ -13,9 +12,10 @@
 ### generate_report.ipynb
 How to generate a report.
 
-### update_treat_info.ipynb
-How to find FDA labels.
-
+### docs/
+Directory for Oncobox reports and glossaries.
+### fin_reports/
+Saved reports.
 ### res_files/
 Saved results from papers and clinical trials.
 
